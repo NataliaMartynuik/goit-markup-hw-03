@@ -1,0 +1,191 @@
+:root {
+    --header-color: #2F303A;
+    --title-color: #212121;
+    --text-color: #757575;
+    --blue-text-color: #2196F3;
+    --background-color: #F5F4FA;
+    --secondary-color: #ffffff;
+}
+
+body {
+    font-family: Roboto, Tahomo, sans-serif;
+    color: var(--text-color);
+    
+}
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+.link:hover,
+.link:focus {
+    color: var(--blue-text-color);
+}
+.link_logo {
+    text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+/* ---------------------header------------------------- */
+
+.navigation, .contact_link {
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.logo_title, .footer_logo {
+    font-family: Raleway, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+ 
+}
+
+.logo_title, .nav_link {
+    color: var(--title-color);
+}
+.logo {
+    color: var(--blue-text-color);
+}
+
+.link_active{
+    color: var(--blue-text-color);
+}
+.contact_link {
+    color: var(--text-color);
+}
+
+/* ---------------------hero------------------------- */
+
+.hero {
+    background-color: var(--header-color);
+}
+.hero_title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+.hero_btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--blue-text-color);
+    color: var(--secondary-color);
+}
+
+/* --------------------features------------------------ */
+
+.features_title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-color);
+}    
+
+.features_text, .footer_nav {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+/* --------------------works-team ----------------------- */
+
+.works_title, .team_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
+.team {
+    background-color: var(--background-color);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.team_item {
+    background-color: var(--secondary-color);
+}
+
+.team_name {
+    font-weight: 500;
+    color: var(--title-color);
+}
+/* --------------------footer----------------------- */
+.footer_contact{
+    font-style: normal;
+}
+.footer_nav {
+    background-color: var(--header-color);
+    color: var(--secondary-color);
+}
+.footer_logo {
+    color: var(--secondary-color);
+}
+
+.footer_link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* --------------------portfolio-------------------- */
+.filter_btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    background-color: var(--background-color);
+}
+.filter_btn:hover,
+.filter_btn:focus {
+    background-color: var(--blue-text-color);
+    color: var(--secondary-color);
+}
+
+/* --------------------galerie-------------------- */
+
+.galerie_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.galerie_text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color); 
+}
