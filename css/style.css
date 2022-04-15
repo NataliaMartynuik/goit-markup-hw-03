@@ -27,6 +27,9 @@ ol {
     padding-left: 0;
     margin: 0;
 }
+img {
+    display: block;
+}
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -64,6 +67,9 @@ ol {
 }
 /* ---------------------header------------------------- */
 
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header_nav {
     display: flex;
     align-items: center;
@@ -255,7 +261,7 @@ ol {
     color: var(--secondary-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    border-bottom: 1px solid #ECECEC;
+  
 }
 .footer_logo {
     display: block;
@@ -270,11 +276,19 @@ ol {
 .footer_contact{
     display: flex;
     flex-flow: column wrap;
-    margin-bottom: 9px;
-}
+    }
 /* --------------------portfolio-------------------- */
+.filter_list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+.filter_item:not(:last-child) {
+    margin-right: 8px;
+}
 .filter_btn {
     cursor: pointer;
+    padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -283,6 +297,11 @@ ol {
     letter-spacing: 0.03em;
     color: var(--title-color);
     background-color: var(--background-color);
+    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .filter_btn:hover,
 .filter_btn:focus {
@@ -292,8 +311,26 @@ ol {
 
 
 /* --------------------galerie-------------------- */
+.galerie {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+.galerie_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    /* padding: 0; */
+}
+.galerie_item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+}
 .galerie_title {
+    margin-left: 24px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -302,8 +339,17 @@ ol {
 }
 
 .galerie_text {
+    margin-left: 24px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color); 
+}
+
+.text_card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
